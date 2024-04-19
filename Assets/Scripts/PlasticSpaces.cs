@@ -4,16 +4,12 @@ using UnityEngine;
 
 public class PlasticSpaces : MonoBehaviour, ISpace
 {
-     private void OnTriggerEnter(Collider other)
-    {
-        Player player = other.GetComponent<Player>();
-        if (player != null)
-        {
-            PlasticSpace(player);
-        }
-    }
-    public void PlasticSpace(Player player)
-    {
+     public void OnSpaceBehaviour(Player player) {
+        player.fishAmount++;
+    }   
+
+    public void SpaceSprite(){
+
     }
     // Start is called before the first frame update
     void Start()

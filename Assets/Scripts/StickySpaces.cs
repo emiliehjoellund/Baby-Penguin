@@ -5,17 +5,13 @@ using UnityEngine;
 public class StickySpaces : MonoBehaviour, ISpace
 {
 
-    private void OnTriggerEnter(Collider other)
-    {
-        Player player = other.GetComponent<Player>();
-        if (player != null)
-        {
-            StickySpace(player);
-        }
-    }
+    public void OnSpaceBehaviour(Player player) {
+        player.fishAmount++;
+        
+    }   
 
-    public void StickySpace(Player player)
-    {
+    public void SpaceSprite(){
+
     }
 
     // Start is called before the first frame update

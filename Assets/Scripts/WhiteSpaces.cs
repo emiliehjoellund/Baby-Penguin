@@ -4,17 +4,12 @@ using UnityEngine;
 
 public class WhiteSpaces : MonoBehaviour, ISpace
 {
-     private void OnTriggerEnter(Collider other)
-    {
-        Player player = other.GetComponent<Player>();
-        if (player != null)
-        {
-            WhiteSpace(player);
-        }
-    }
+  public void OnSpaceBehaviour(Player player) {
+        player.fishAmount++;
+    }   
 
-    public void WhiteSpace(Player player)
-    {
+    public void SpaceSprite(){
+
     }
 
     // Start is called before the first frame update

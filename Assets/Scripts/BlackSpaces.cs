@@ -5,17 +5,12 @@ using UnityEngine;
 public class BlackSpaces : MonoBehaviour, ISpace
 {
     
-     private void OnTriggerEnter(Collider other)
-    {
-        Player player = other.GetComponent<Player>();
-        if (player != null)
-        {
-            BlackSpace(player);
-        }
-    }
+     public void OnSpaceBehaviour(Player player) {
+        player.fishAmount++;
+    }   
 
-    public void BlackSpace(Player player)
-    {
+    public void SpaceSprite(){
+
     }
     // Start is called before the first frame update
     void Start()
