@@ -4,15 +4,27 @@ using UnityEngine;
 
 public class BabyPenguin : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
+    public int requiredFish = 3; //Number of fish required to feed baby penguin
+    private int currentFishCount = 0; // Current number of fish collected by players
+
+//Method to check if the baby can be fed
+    // public bool CanFeedBaby() {
         
+    // }
+    
+
+
+    public void FeedBaby() {
+
     }
 
-    // Update is called once per frame
-    void Update()
-    {
+
+    public void CollectFish(int fishCollected) {
+
+    }
+
+
+    public void ResetBaby() {
         
     }
 }
