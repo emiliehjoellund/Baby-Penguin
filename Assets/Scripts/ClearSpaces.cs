@@ -1,16 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ClearSpaces : MonoBehaviour, ISpace
 {
     public void OnSpaceBehaviour(Player player) {
-        player.fishAmount++;
+        player.AddFishToPlayer();
     }   
 
-    public void SpaceSprite(){
-
-    }
     // Start is called before the first frame update
     void Start()
     {

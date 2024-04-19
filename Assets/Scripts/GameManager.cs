@@ -29,6 +29,7 @@ public class GameManager : MonoBehaviour
         fishCount[player] -= amount;
     }
 
+
     public List<Spaces> Spaces = new List<Spaces>();
 
 

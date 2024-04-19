@@ -4,13 +4,23 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public int fishAmount;
+    private int turnsLost = 0;
+   private int fishAmount;
 
     public void LoseTurn()
     {
+        turnsLost++;
     }
 
+    public void AddFishToPlayer(){
+        fishAmount++;
+    }
 
+    public void ResetFishAmount(){
+        GameManager gameManager = GetComponent<GameManager>();
+        gameManager.AddFishToPond(fishAmount);
+        fishAmount = 0;
+    }
 
     // Start is called before the first frame update
     void Start()

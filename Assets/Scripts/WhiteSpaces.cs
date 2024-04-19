@@ -5,12 +5,9 @@ using UnityEngine;
 public class WhiteSpaces : MonoBehaviour, ISpace
 {
   public void OnSpaceBehaviour(Player player) {
-        player.fishAmount++;
+   
     }   
 
-    public void SpaceSprite(){
-
-    }
 
     // Start is called before the first frame update
     void Start()

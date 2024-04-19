@@ -5,7 +5,9 @@ using UnityEngine;
 public class PlasticSpaces : MonoBehaviour, ISpace
 {
      public void OnSpaceBehaviour(Player player) {
-        player.fishAmount++;
+        GameManager gameManager = GetComponent<GameManager>();
+
+        player.ResetFishAmount();
     }   
 
     public void SpaceSprite(){

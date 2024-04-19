@@ -6,13 +6,9 @@ public class StickySpaces : MonoBehaviour, ISpace
 {
 
     public void OnSpaceBehaviour(Player player) {
-        player.fishAmount++;
-        
+        player.LoseTurn();
     }   
 
-    public void SpaceSprite(){
-
-    }
 
     // Start is called before the first frame update
     void Start()

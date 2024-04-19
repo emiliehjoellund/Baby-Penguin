@@ -6,5 +6,4 @@ using UnityEngine;
 
 public interface ISpace {
     public void OnSpaceBehaviour(Player player);
-    public void SpaceSprite();
 }

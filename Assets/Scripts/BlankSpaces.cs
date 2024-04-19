@@ -6,24 +6,12 @@ using UnityEngine;
 public class BlankSpaces : MonoBehaviour, ISpace
 {
     public void OnSpaceBehaviour(Player player) {
-        player.fishAmount++;
+        GameManager gameManager = GetComponent<GameManager>();
+
+       player.AddFishToPlayer();
+        gameManager.RemoveFishFromPond(1);
     }   
 
-    public void SpaceSprite(){
-
-    }
-    //  private void OnTriggerEnter(Collider other)
-    // {
-    //     Player player = other.GetComponent<Player>();
-    //     if (player != null)
-    //     {
-    //         BlankSpace(player);
-    //     }
-    // }
-
-    public void BlankSpace(Player player)
-    {
-    }
     // Start is called before the first frame update
     void Start()
     {
