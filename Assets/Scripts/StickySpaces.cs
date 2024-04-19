@@ -5,9 +5,13 @@ using UnityEngine;
 public class StickySpaces : MonoBehaviour, IStickySpace
 {
 
-    public void OnPlayerEnter(Player player)
+    private void OnTriggerEnter(Collider other)
     {
-        StickySpace(player);
+        Player player = other.GetComponent<Player>();
+        if (player != null)
+        {
+            StickySpace(player);
+        }
     }
 
     public void StickySpace(Player player)

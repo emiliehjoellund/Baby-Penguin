@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class ClearSpaces : MonoBehaviour
 {
-    public void OnPlayerEnter(Player player)
+    private void OnTriggerEnter(Collider other)
     {
-        ClearSpace(player);
+        Player player = other.GetComponent<Player>();
+        if (player != null)
+        {
+            ClearSpace(player);
+        }
     }
 
     public void ClearSpace(Player player)

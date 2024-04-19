@@ -5,9 +5,13 @@ using UnityEngine;
 public class BlackSpaces : MonoBehaviour
 {
     
-    public void OnPlayerEnter(Player player)
+     private void OnTriggerEnter(Collider other)
     {
-        BlackSpace(player);
+        Player player = other.GetComponent<Player>();
+        if (player != null)
+        {
+            BlackSpace(player);
+        }
     }
 
     public void BlackSpace(Player player)

@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class PlasticSpaces : MonoBehaviour
 {
-    public void OnPlayerEnter(Player player)
+     private void OnTriggerEnter(Collider other)
     {
-        PlasticSpace(player);
+        Player player = other.GetComponent<Player>();
+        if (player != null)
+        {
+            PlasticSpace(player);
+        }
     }
-
     public void PlasticSpace(Player player)
     {
     }

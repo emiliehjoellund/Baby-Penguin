@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class BlankSpaces : MonoBehaviour
 {
-    public void OnPlayerEnter(Player player)
+     private void OnTriggerEnter(Collider other)
     {
-        BlankSpace(player);
+        Player player = other.GetComponent<Player>();
+        if (player != null)
+        {
+            BlankSpace(player);
+        }
     }
 
     public void BlankSpace(Player player)
