@@ -7,8 +7,8 @@ public class BlackSpaces : MonoBehaviour, ISpace
     
      public void OnSpaceBehaviour(Player player) {
         GameManager gameManager = GetComponent<GameManager>();
-
-        player.fishAmount--;
+    
+player.AddFishToPlayer();
         gameManager.AddFishToPond(1);
     }   
 

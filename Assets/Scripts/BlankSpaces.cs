@@ -8,7 +8,7 @@ public class BlankSpaces : MonoBehaviour, ISpace
     public void OnSpaceBehaviour(Player player) {
         GameManager gameManager = GetComponent<GameManager>();
 
-       player.AddFishToPlayer();
+        player.AddFishToPlayer();
         gameManager.RemoveFishFromPond(1);
     }   
 
