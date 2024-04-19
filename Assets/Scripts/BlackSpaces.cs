@@ -4,6 +4,15 @@ using UnityEngine;
 
 public class BlackSpaces : MonoBehaviour
 {
+    
+    public void OnPlayerEnter(Player player)
+    {
+        BlackSpace(player);
+    }
+
+    public void BlackSpace(Player player)
+    {
+    }
     // Start is called before the first frame update
     void Start()
     {
