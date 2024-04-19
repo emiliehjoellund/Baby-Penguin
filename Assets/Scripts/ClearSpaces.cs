@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ClearSpaces : MonoBehaviour
+public class ClearSpaces : MonoBehaviour, ISpace
 {
     private void OnTriggerEnter(Collider other)
     {

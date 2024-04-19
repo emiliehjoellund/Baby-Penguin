@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlasticSpaces : MonoBehaviour
+public class PlasticSpaces : MonoBehaviour, ISpace
 {
      private void OnTriggerEnter(Collider other)
     {

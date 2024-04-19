@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StickySpaces : MonoBehaviour, IStickySpace
+public class StickySpaces : MonoBehaviour, ISpace
 {
 
     private void OnTriggerEnter(Collider other)
